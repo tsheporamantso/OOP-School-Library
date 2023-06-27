@@ -105,8 +105,6 @@ run the result on the terminal through:
 
 ```sh
   ruby person.rb
-  ruby student.rb
-  ruby teacher.rb
 ```
 
 -
