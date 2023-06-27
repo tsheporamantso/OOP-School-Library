@@ -1,4 +1,6 @@
-class Person
+require './nameable'
+
+class Person < Nameable
   attr_reader :id
   attr_accessor :name, :age
 
@@ -7,6 +9,11 @@ class Person
     @age = age
     @name = name
     @parent_permission = parent_permission
+    super()
+  end
+
+  def correct_name
+    @name
   end
 
   def can_use_services?
