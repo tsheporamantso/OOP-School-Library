@@ -71,7 +71,7 @@ class App
     parent_permission = permission == 'y'
     puts 'Classroom:'
     classroom = gets.chomp
-    @people.push Student.new(age: age, name: name, parent_permission: parent_permission, classroom: Classroom)
+    @people.push Student.new(age: age, name: name, parent_permission: parent_permission, classroom: classroom)
     puts 'Person created successfully'
   end
 
